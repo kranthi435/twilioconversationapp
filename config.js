@@ -6,11 +6,11 @@ try {
 
 module.exports = {
   twilio: {
-    accountSid: process.env.TWILIO_ACCOUNT_SID,
-    authToken: process.env.TWILIO_AUTH_TOKEN,
-    apiKey: process.env.TWILIO_API_KEY,
-    apiSecret: process.env.TWILIO_API_SECRET,
-    chatServiceSid: process.env.TWILIO_CHAT_SERVICE_SID
+    accountSid: 'AC2cc1717ec3e50507ec8267b315caf5f6',
+    authToken: '0ea0c185d74ae42d15b05828c2676be4',
+    apiKey: 'SKcce7f18519f783cc741a5b0c3eceeb21',
+    apiSecret: 'YenZIXDOcmDwZNvX9vZExL0po3uJY2uL',
+    chatServiceSid: 'IS58750fba86ae4b898a4ccdc2fa57aea5'
   },
   port: process.env.PORT || 3001,
   ngrokSubdomain: 'ajtack'

@@ -33,6 +33,7 @@ app.listen(config.port, () => {
 // ====== HANDLE NEW-CONVERSATION HOOK ========
 // ============================================
 // ============================================
+
 let client = new twilio(config.twilio.accountSid, config.twilio.authToken);
 
 app.post('/chat', (req, res) => {
@@ -59,15 +60,15 @@ app.post('/outbound-status', (req, res) => {
 
 
 
-var ngrokOptions = {
-  proto: 'http',
-  addr: config.port
-};
+// var ngrokOptions = {
+//   proto: 'http',
+//   addr: config.port
+// };
 
-if (config.ngrokSubdomain) {
-  ngrokOptions.subdomain = config.ngrokSubdomain
-}
+// if (config.ngrokSubdomain) {
+//   ngrokOptions.subdomain = config.ngrokSubdomain
+// }
 
-ngrok.connect(ngrokOptions).then(url => {
-  console.log('ngrok url is ' + url);
-}).catch(console.error);
+// ngrok.connect(ngrokOptions).then(url => {
+//   console.log('ngrok url is ' + url);
+// }).catch(console.error);
